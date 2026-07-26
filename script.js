@@ -124,7 +124,7 @@ const projects = [
     year: "2022 - 2023",
     category: "engineering",
     tags: ["Engineering", "IP68", "FEA", "Wireless"],
-    image: "assets/img-008.png",
+    image: "assets/rtu-scaffolding-sensor-ipin.jpg",
     gallery: [
       "assets/img-008.png",
       "assets/img-009.png",
@@ -231,8 +231,12 @@ const projects = [
     year: "2015 - 2022",
     category: "engineering",
     tags: ["Engineering", "5G radio", "Radio antenna", "IP68", "ATEX"],
-    image: "assets/img-020.png",
-    gallery: ["assets/img-020.png", "assets/img-021.png", "assets/img-022.png"],
+    image: "assets/integra-e2-render-angle.png",
+    gallery: [
+      "assets/integra-e2-render-angle.png",
+      "assets/integra-e2-render-rear.png",
+      "assets/integra-e2-render-front.png",
+    ],
     summary:
       "Lead mechanical engineering for point-to-point 5G radio equipment with a simple, robust enclosure philosophy.",
     links: [
@@ -303,13 +307,9 @@ const projects = [
     image: "assets/img-032.png",
     gallery: [
       "assets/img-032.png",
-      "assets/img-033.png",
-      "assets/img-034.png",
-      "assets/img-035.png",
-      "assets/img-036.png",
-      "assets/img-037.png",
-      "assets/img-038.png",
-      "assets/img-039.png",
+      "assets/fire-alarm-smoke-detector-render.png",
+      "assets/fire-alarm-sounder-strobe-render.png",
+      "assets/fire-alarm-red-detector-render.png",
     ],
     summary:
       "Design development for a fire alarm product group in accordance with EN-54 requirements.",
