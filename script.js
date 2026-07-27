@@ -3,7 +3,7 @@ const projects = [
     id: "bubblebee",
     title: "Microphone Handling-Noise Reduction",
     company: "Bubblebee Industries",
-    year: "2025 - Present",
+    year: "2025 - July 2026",
     category: "engineering",
     featured: true,
     tags: ["Engineering", "Audio hardware", "Quick release", "Vibration analysis", "ESP32"],
