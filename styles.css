@@ -792,15 +792,17 @@ address a:focus-visible {
   width: 44px;
   height: 44px;
   border: 0;
-  background: transparent;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
   color: #111;
   cursor: pointer;
   transform: translateY(-50%);
-  transition: opacity 180ms ease, transform 180ms ease;
+  transition: background 180ms ease, opacity 180ms ease, transform 180ms ease;
 }
 
 .modal .modal-nav-button:hover,
 .modal .modal-nav-button:focus-visible {
+  background: rgba(255, 255, 255, 0.62);
   opacity: 0.82;
   transform: translateY(-50%) scale(1.04);
   outline: none;
@@ -808,15 +810,9 @@ address a:focus-visible {
 
 .modal-nav-button span[aria-hidden="true"] {
   margin-top: -2px;
-  font-size: 1.26rem;
+  font-size: 1.41rem;
   font-weight: 820;
   line-height: 1;
-  -webkit-text-stroke: 0.9px #fff;
-  text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
 }
 
 .modal-nav-button-previous {
