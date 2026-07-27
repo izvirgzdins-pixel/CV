@@ -338,7 +338,7 @@ const projects = [
   },
   {
     id: "et-sons",
-    title: "Latvian Architecture Award Object",
+    title: "Latvian Architecture Award",
     company: "ET Sons",
     year: "2015",
     category: "industrial-design",
@@ -346,7 +346,7 @@ const projects = [
     image: "assets/img-044.png",
     gallery: ["assets/img-044.png", "assets/img-045.png"],
     summary:
-      "Rubik's cube pineapple award object with 50+ parts, produced using 5-axis CNC milling.",
+      "Rubik's cube pineapple award with 50+ parts, produced using 5-axis CNC milling.",
     bullets: [
       "Industrial design and project management.",
       "Complex multi-part assembly with precision manufacturing.",
