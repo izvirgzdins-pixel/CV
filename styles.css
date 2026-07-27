@@ -791,29 +791,32 @@ address a:focus-visible {
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  background: rgba(16, 18, 20, 0.75);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-  color: #fff;
+  border: 0;
+  background: transparent;
+  color: #111;
   cursor: pointer;
   transform: translateY(-50%);
-  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  transition: opacity 180ms ease, transform 180ms ease;
 }
 
 .modal .modal-nav-button:hover,
 .modal .modal-nav-button:focus-visible {
-  background: rgba(16, 18, 20, 0.95);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  opacity: 0.82;
   transform: translateY(-50%) scale(1.04);
   outline: none;
 }
 
 .modal-nav-button span[aria-hidden="true"] {
   margin-top: -2px;
-  font-size: 1.8rem;
+  font-size: 1.26rem;
+  font-weight: 820;
   line-height: 1;
+  -webkit-text-stroke: 0.9px #fff;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
 .modal-nav-button-previous {
