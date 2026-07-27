@@ -1167,7 +1167,8 @@ address a:focus-visible {
 
 @media (max-width: 680px) {
   .site-header {
-    position: static;
+    position: sticky;
+    top: 0;
   }
 
   .site-header-inner {
@@ -1239,6 +1240,7 @@ address a:focus-visible {
 
   .hero-media {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: auto auto auto;
     grid-auto-rows: auto;
     align-items: stretch;
     gap: 8px;
@@ -1265,14 +1267,18 @@ address a:focus-visible {
   }
 
   .hero-media .hero-image:nth-child(4) {
-    grid-column: span 4;
-    aspect-ratio: 16 / 9;
+    grid-column: span 3;
+    aspect-ratio: 4 / 3;
+    background: #ffffff;
+    object-fit: contain;
   }
 
   .hero-media .hero-image:nth-child(5) {
-    grid-column: span 2;
-    height: 100%;
-    aspect-ratio: auto;
+    grid-column: span 3;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    background: #ffffff;
+    object-fit: contain;
   }
 
   .hero-facts {
