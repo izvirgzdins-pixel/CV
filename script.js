@@ -34,7 +34,7 @@ const projects = [
     id: "warp-lustra",
     title: "2 x 7 m Kinematic Robotic Chandelier",
     company: "Warp Agency",
-    year: "Summer 2023",
+    year: "2023.06 - 2023.08",
     category: "engineering",
     featured: true,
     tags: ["Engineering", "Kinematics", "Robotics", "Installation", "CAD"],
