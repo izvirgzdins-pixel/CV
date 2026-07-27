@@ -175,8 +175,8 @@ main {
 
 .button:hover,
 .button:focus-visible,
-.modal button:hover,
-.modal button:focus-visible {
+.modal button:not(.modal-nav-button):hover,
+.modal button:not(.modal-nav-button):focus-visible {
   transform: translateY(-1px);
 }
 
@@ -764,6 +764,12 @@ address a:focus-visible {
   min-height: 0;
 }
 
+.modal-media-stage {
+  position: relative;
+  display: grid;
+  min-height: 0;
+}
+
 .modal-gallery img,
 .modal-gallery video {
   width: 100%;
@@ -776,22 +782,59 @@ address a:focus-visible {
   background: #f0f2f3;
 }
 
+.modal-nav-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(215, 219, 221, 0.82);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 24px rgba(18, 24, 31, 0.18);
+  color: var(--ink);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.modal .modal-nav-button:hover,
+.modal .modal-nav-button:focus-visible {
+  background: #fff;
+  box-shadow: 0 14px 30px rgba(18, 24, 31, 0.24);
+  transform: translateY(-50%) scale(1.04);
+}
+
+.modal-nav-button span[aria-hidden="true"] {
+  margin-top: -2px;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.modal-nav-button-previous {
+  left: 14px;
+}
+
+.modal-nav-button-next {
+  right: 14px;
+}
+
+.modal-nav-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .modal-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.modal-controls button {
-  min-height: 38px;
-  padding: 0 12px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: #f7f8f8;
-  cursor: pointer;
-  font-size: 0.84rem;
-  font-weight: 760;
+  justify-content: center;
 }
 
 #imageCounter {
@@ -1087,7 +1130,7 @@ address a:focus-visible {
   .hero-media .hero-image-large {
     grid-column: 1 / -1;
     grid-row: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     height: auto;
   }
 
@@ -1199,11 +1242,28 @@ address a:focus-visible {
     display: block;
   }
 
+  .modal-media-stage {
+    display: grid;
+  }
+
   .modal-gallery img,
   .modal-gallery video {
     min-height: 230px;
     height: auto;
     max-height: 46vh;
+  }
+
+  .modal-nav-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-nav-button-previous {
+    left: 8px;
+  }
+
+  .modal-nav-button-next {
+    right: 8px;
   }
 
   .modal-controls {

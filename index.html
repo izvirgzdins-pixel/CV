@@ -9,7 +9,7 @@
     />
     <title>Imants Zvirgzdins | Mechanical Engineer & Industrial Designer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260727-mobile-hero" />
+    <link rel="stylesheet" href="styles.css?v=20260727-modal-nav-hover" />
   </head>
   <body>
     <header class="site-header">
@@ -88,7 +88,7 @@
             <span class="project-card-content">
               <span class="project-meta">
                 <span>Bubblebee Industries</span>
-                <span>2025 - July 2026</span>
+                <span>2025.03 - 2026.07</span>
               </span>
               <h3>Microphone Handling-Noise Reduction</h3>
               <p>Audio hardware, quick-release blimp mechanism design, vibration analysis, and ESP32 data-logging validation.</p>
@@ -303,7 +303,7 @@
         </div>
         <div class="timeline">
           <article>
-            <time>2025 - July 2026</time>
+            <time>2025.03 - 2026.07</time>
             <div>
               <h3>Senior Mechanical Engineer - Bubblebee Industries</h3>
               <p>Audio-recording microphone handling-noise reduction equipment, quick-release mechanism design for microphone blimps, vibration analysis, transmittance testing, and validation test-stand development.</p>
@@ -376,12 +376,20 @@
         <button class="modal-close" type="button" data-close-modal aria-label="Close project detail">Close</button>
         <div class="modal-layout">
           <div class="modal-gallery">
-            <img id="modalImage" alt="" />
-            <video id="modalVideo" controls playsinline muted preload="auto" hidden></video>
+            <div class="modal-media-stage">
+              <img id="modalImage" alt="" />
+              <video id="modalVideo" controls playsinline muted preload="auto" hidden></video>
+              <button class="modal-nav-button modal-nav-button-previous" type="button" id="previousImage" aria-label="Previous media">
+                <span aria-hidden="true">&lsaquo;</span>
+                <span class="modal-nav-text">Previous</span>
+              </button>
+              <button class="modal-nav-button modal-nav-button-next" type="button" id="nextImage" aria-label="Next media">
+                <span aria-hidden="true">&rsaquo;</span>
+                <span class="modal-nav-text">Next</span>
+              </button>
+            </div>
             <div class="modal-controls">
-              <button type="button" id="previousImage">Previous</button>
               <span id="imageCounter"></span>
-              <button type="button" id="nextImage">Next</button>
             </div>
           </div>
             <div class="modal-copy">
@@ -395,6 +403,6 @@
       </section>
     </div>
 
-    <script src="script.js?v=20260727-bbi-date"></script>
+    <script src="script.js?v=20260727-bbi-numeric-date"></script>
   </body>
 </html>
