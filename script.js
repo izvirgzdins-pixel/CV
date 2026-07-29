@@ -94,12 +94,12 @@ const projects = [
       {
         type: "video",
         src: "assets/giraffe360-lidar-motion-1001.mp4",
-        poster: "assets/giraffe360-lidar-optics-assembly-enhanced.jpg",
+        poster: "assets/giraffe360-video-1001-poster.jpg",
       },
       {
         type: "video",
         src: "assets/giraffe360-lidar-motion-1795.mp4",
-        poster: "assets/giraffe360-lidar-motor-assembly-enhanced.jpg",
+        poster: "assets/giraffe360-video-1795-poster.jpg",
       },
     ],
     summary:
