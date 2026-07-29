@@ -126,9 +126,7 @@ const projects = [
     tags: ["Engineering", "IP68", "FEA", "Wireless"],
     image: "assets/rtu-scaffolding-sensor-ipin.jpg",
     gallery: [
-      "assets/img-008.png",
       "assets/img-009.png",
-      "assets/img-010.png",
       "assets/rtu-scaffolding-sensor-ipin.jpg",
     ],
     summary:
