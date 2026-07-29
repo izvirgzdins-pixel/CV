@@ -79,10 +79,10 @@ const projects = [
     year: "2023 - 2025",
     category: "engineering",
     tags: ["Engineering", "Validation", "Tooling", "Prototyping"],
-    image: "assets/giraffe360-lidar-optics-assembly-enhanced.jpg",
+    image: "assets/giraffe360-lidar-optics-white.jpg",
     gallery: [
-      "assets/giraffe360-lidar-optics-assembly-enhanced.jpg",
-      "assets/giraffe360-lidar-motor-assembly-enhanced.jpg",
+      "assets/giraffe360-lidar-optics-white.jpg",
+      "assets/giraffe360-lidar-motor-white.jpg",
       "assets/giraffe360-cad-section-enhanced.jpg",
       "assets/giraffe360-cad-transparent-housing-enhanced.jpg",
       "assets/giraffe360-cad-lens-bracket-enhanced.jpg",

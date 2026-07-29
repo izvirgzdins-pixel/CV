@@ -317,6 +317,8 @@ address a:focus-visible {
 .hero-media .hero-image:nth-child(3) {
   grid-column: 6 / 8;
   grid-row: 3 / 5;
+  background: #ffffff;
+  object-fit: contain;
 }
 
 .hero-media .hero-image:nth-child(4) {
